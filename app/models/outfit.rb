@@ -7,6 +7,7 @@
 #  name       :string(255)
 #  occasion   :string(255)
 #  notes      :string(255)
+#  user       :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

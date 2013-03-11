@@ -1,9 +1,12 @@
 %p#notice= notice
-%p
+/ %p
+
+.row
+  .columns.twelve
   .outfit_name= @outfit.name
   %br/
   %br/
-  <div class="outfit_display"
+  .outfit_display
   - @outfit.pieces.each do |piece|
     .outfit_display= image_tag(piece.image, :size => "250x250")
 .links
@@ -11,6 +14,5 @@
   | #{link_to 'Edit', edit_outfit_path(@outfit)}
   | #{link_to('Delete Outfit', @outfit, :method => :delete, :confirm => 'Are you sure?')}
   /
-
 
   / <haml:loud> link_to('Go to Piece', piece_path) </haml:loud>

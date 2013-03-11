@@ -10,6 +10,7 @@ class CreatePiecesTable < ActiveRecord::Migration
        t.string :size
        t.text :details
        t.text :notes
+       t.integer :user_id
        t.timestamps
     end
   end

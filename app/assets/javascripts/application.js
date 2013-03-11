@@ -5,6 +5,5 @@
 //= require 'foundation/javascripts/foundation.min.js'
 //= require 'foundation/javascripts/app.js'
 //= require 'underscore-min.js'
+//= require 'jquery.jcoverflip.js'
 //= require 'style'
-
-

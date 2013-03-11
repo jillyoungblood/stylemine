@@ -5,6 +5,7 @@ class CreateOutfitsTable < ActiveRecord::Migration
        t.string :name
        t.string :occasion
        t.string :notes
+       t.integer :user
        t.timestamps
     end
   end

@@ -1,8 +1,9 @@
 $(function(){
 
   $('.outfit_item').click(select_piece);
-  $('#preview_outfit').click(overlay);
   $('#flip').jcoverflip();
+  //$('#next_dropdown').click(show_dropdown);
+
 });
 
 function select_piece()
@@ -13,7 +14,7 @@ function select_piece()
   if (was_checked)
   {
     $(checkbox).attr('checked', false);
-    $(this).css('border', '1px solid #999999');
+    $(this).css('border', '1px solid #D3DCF2');
   }
   else
   {

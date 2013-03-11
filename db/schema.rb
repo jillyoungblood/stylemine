@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20130308031501) do
     t.string   "name"
     t.string   "occasion"
     t.string   "notes"
+    t.integer  "user"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -37,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20130308031501) do
     t.string   "size"
     t.text     "details"
     t.text     "notes"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

@@ -3,14 +3,7 @@ class PiecesController < ApplicationController
   # GET /pieces.json
 
   def index
-    @pieces = Piece.all
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @pieces }
-
-    # @pieces = @auth.pieces.order(:item)
-    # @items = @auth.pieces.map(&:item).uniq.sort
-    end
+    @pieces = @auth.pieces.order(:item)
   end
 
   # GET /pieces/1
@@ -47,15 +40,16 @@ class PiecesController < ApplicationController
 
     respond_to do |format|
       if @piece.save
-        format.html { redirect_to @piece, notice: 'Piece was successfully created.' }
-        format.json { render json: @piece, status: :created, location: @piece }
+        format.html { redirect_to @piece, :notice => 'Piece was successfully created.' }
+        # format.json { render json: @piece, :status => 'created', :location => @piece }
       else
         format.html { render action: "new" }
-        format.json { render json: @piece.errors, status: :unprocessable_entity }
+        # format.json { render json: @piece.errors, status: :unprocessable_entity }
 
-    # @auth.pieces << Piece.create(params[:piece])
-    # @pieces = @auth.pieces.order(:item)
-    # @pieces = @auth.pieces.map(&:item).uniq.sort
+    @auth.pieces << Piece.create(params[:piece])
+    @pieces = @auth.pieces.order(:item)
+    @pieces = @auth.pieces.map(&:item).uniq.sort
+
       end
     end
   end

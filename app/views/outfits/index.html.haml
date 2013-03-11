@@ -1,11 +1,15 @@
-.outfit_display
-  - @outfits.each do |outfit|
-    #{link_to(outfit.name, outfit)}
-    %br/
-    %br/
-    - outfit.pieces.each do |piece|
-      = image_tag(piece.image, :size => "200x200")
+.row
+  .twelve.columns
+    .outfit_display#data-reveal-id
+      - @outfits.each do |outfit|
+        #{link_to(outfit.name, outfit)}
+        %br/
+        %br/
+        - outfit.pieces.each do |piece|
+          = image_tag(piece.image, :size => "200x200")
 
-    %br/
-    %br/
-    %br/
+        %br/
+        %br/
+        %br/
+
+%a{"data-reveal-id" => "myModal", :href => "pieces_path"} Click Me For A Modal

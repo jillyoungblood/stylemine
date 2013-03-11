@@ -4,6 +4,30 @@
 General
 */
 
+.title
+{
+  color: white;
+}
+
+#notice
+{
+  margin-left: 350px;
+  margin-top: 50px;
+}
+
+.dropdown
+{
+  margin-top: 75px;
+  margin-left: 200px;
+  width: 400px;
+}
+
+#flip.ui-jcoverflip
+{
+  margin-top: 350px;
+  margin-left: 100px;
+}
+
 .ui-jcoverflip
 {
   position: relative;
@@ -22,7 +46,6 @@ General
 
 .pretty_pictures
 {
-  border: 1px solid #D3DCF2;
   padding: 30px;
 }
 
@@ -42,7 +65,7 @@ General
   font-size: 54px;
   font-weight: bold;
   padding-top: 10px;
-  margin-left: 350px;
+  margin-left: 20px;
   margin-bottom: 55px;
 }
 
@@ -109,9 +132,8 @@ Pieces display
 
 form
 {
-  width: 500px;
+  width: 400px;
   position: relative;
-  margin-left: 350px
 }
 
 .links
@@ -156,25 +178,16 @@ Outfit display:
   display: inline;
   font-family: 'Cantata One', serif;
   font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 55px;
   padding-bottom: 30px;
+  margin-left: 15px;
 }
 
 .outfit_name
 {
   font-family: 'Cantata One', serif;
   font-size: 24px;
-}
-
-.mixmatch
-{
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  float: left;
-  border: 1px dashed black;
+  margin-left: 30px;
 }
 
 .piece
@@ -182,11 +195,6 @@ Outfit display:
   width: 10px;
   height: 10px;
   float: left;
-}
-
-#myModal
-{
-  width: 70%;
 }
 
 /*.outfit_display

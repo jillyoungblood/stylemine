@@ -74,3 +74,5 @@ p30 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/c
 p31 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/i/s/isa27rnorblk_1/.jpg', :item => 'Shoes', :designer => 'Isa Tapia', :color => 'black, gold', :material => 'leather', :fit => 'tight', :size => '9', :details => 'metal studs', :notes => 'Get these reheeled soon.')
 
 p32 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/l/a/lan27pz8mar_1/.jpg', :item => 'Bag', :designer => 'Lanvin', :color => 'gray', :material => 'snakeskin', :fit => 'n/a', :size => 'small', :details => 'chain strap is removable', :notes => 'vintage')
+
+u3.pieces << p1 << p2 << p3 << p4 << p5 << p6 << p7 << p8 << p9 << p10 << p11 << p12 << p13 << p14 << p15 << p16 << p17 << p18 << p19 << p20 << p21 << p22 << p23 << p24 << p25 << p26 << p27 << p28 << p29 << p30 << p31 << p32
