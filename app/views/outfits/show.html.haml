@@ -20,7 +20,9 @@
   %br/
 
   .outfit_display
-  - @outfit.pieces.each do |piece|
+  - @outfit.pieces.each.with_index do |piece, index|
+    - if index %3 == 0
+      %div.padding_disaster
     %a.button{"data-reveal-id" => piece.id, :href => "#", :class => 'outfit_show'}
       .outfit_display= image_tag(piece.image, :size => "250x250")
 

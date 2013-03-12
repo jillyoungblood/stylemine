@@ -2,6 +2,7 @@ $(function(){
 
   $('.outfit_item').click(select_piece);
   $('#flip').jcoverflip({current: 7});
+  // $('.form').blur();
   //$('#next_dropdown').click(show_dropdown);
 
 });
@@ -15,10 +16,12 @@ function select_piece()
   {
     $(checkbox).attr('checked', false);
     $(this).css('border', '1px solid #D3DCF2');
+    $(this).removeClass('checked_item');
   }
   else
   {
     $(checkbox).attr('checked', true);
-    $(this).css('border', '1px solid red');
+    $(this).addClass('checked_item');
+    // css('border', '1px solid red');
   }
 }
