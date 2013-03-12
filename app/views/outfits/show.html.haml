@@ -4,12 +4,26 @@
 .row
   .columns.twelve
   .outfit_name= @outfit.name
+.row
+  .columns.twelve
+    .social-buttons
+      %p.social-buttons
+        %a.twitter-share-button{"data-hashtags" => "stylemine", "data-via" => "JillYoungblood", :href => "https://twitter.com/share"} Tweet
+      :javascript
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      %p.social-buttons
+        %a{"data-pin-config" => "above", "data-pin-do" => "buttonBookmark", :href => "//pinterest.com/pin/create/button/"}
+          %img{:src => "//assets.pinterest.com/images/pidgets/pin_it_button.png"}/
+
+
   %br/
   %br/
+
   .outfit_display
   - @outfit.pieces.each do |piece|
     %a.button{"data-reveal-id" => piece.id, :href => "#", :class => 'outfit_show'}
       .outfit_display= image_tag(piece.image, :size => "250x250")
+
 %br
 %br
 %br
