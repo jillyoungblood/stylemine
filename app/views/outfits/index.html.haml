@@ -1,8 +1,8 @@
 .row
   .twelve.columns
-    .outfit_display#data-reveal-id
+    .outfit_display
       - @outfits.each do |outfit|
-        #{link_to(outfit.name, outfit)}
+        #{link_to(outfit.name, outfit, :class => 'outfit_index_name')}
         %br/
         %br/
         - outfit.pieces.each do |piece|
@@ -11,5 +11,3 @@
         %br/
         %br/
         %br/
-
-%a{"data-reveal-id" => "myModal", :href => "pieces_path"} Click Me For A Modal

@@ -8,7 +8,11 @@
   %br/
   .outfit_display
   - @outfit.pieces.each do |piece|
-    .outfit_display= image_tag(piece.image, :size => "250x250")
+    %a.button{"data-reveal-id" => piece.id, :href => "#", :class => 'outfit_show'}
+      .outfit_display= image_tag(piece.image, :size => "250x250")
+%br
+%br
+%br
 .links
   = link_to('New Outfit', new_outfit_path)
   | #{link_to 'Edit', edit_outfit_path(@outfit)}
@@ -16,3 +20,35 @@
   /
 
   / <haml:loud> link_to('Go to Piece', piece_path) </haml:loud>
+
+- @outfit.pieces.each do |piece|
+  .reveal-modal{:class => "[medium]", :class => 'reveal-overlay', :id => piece.id}
+    %p
+      %br/
+      %b
+        %span.piece= piece.item
+        %br
+        by #{piece.designer}
+        %br/
+        %br/
+        %label.piece_labels
+          Color: #{piece.color}
+        %br/
+        %label.piece_labels
+          Material: #{piece.material}
+        %br/
+        %label.piece_labels
+          Fit: #{piece.fit}
+        %br/
+        %label.piece_labels
+          Size:
+          = piece.size
+          %br/
+        %label.piece_labels
+          Details: #{piece.details}
+          %br/
+        %label.piece_labels
+          Notes: #{piece.notes}
+          %br/
+        %br/
+      %a.close-reveal-modal ×

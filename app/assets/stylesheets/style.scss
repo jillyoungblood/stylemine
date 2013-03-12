@@ -4,6 +4,45 @@
 General
 */
 
+#outfits_form
+{
+  width: 1350px;
+}
+
+.new_piece_form
+{
+  width: 300px;
+}
+
+#create_outfit_button
+{
+  margin-top: 10px;
+  background-color: black;
+}
+
+.outfit_show
+{
+  padding: 10px;
+}
+
+.reveal-modal
+{
+  width: 300px;
+}
+
+.button
+{
+  background-color: white;
+}
+
+.outfit_index_name
+{
+  border: 1px solid black;
+  background-color: black;
+  background-size: 20px;
+  color: white;
+}
+
 .title
 {
   color: white;
@@ -12,7 +51,7 @@ General
 #notice
 {
   margin-left: 350px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .dropdown
@@ -56,7 +95,8 @@ General
 
 .field
 {
-  width: 850px;
+  width: 900px;
+  padding-right: 450px;
 }
 
 #your_closet_page_header
@@ -80,7 +120,6 @@ General
   font-size: 54px;
   font-weight: bold;
   padding-top: 10px;
-  margin-left: 350px
 }
 
 .piece_links
@@ -132,7 +171,7 @@ Pieces display
 
 form
 {
-  width: 400px;
+  width: 300px;
   position: relative;
 }
 
@@ -158,7 +197,7 @@ New Piece Page
 #form_image
 {
   float: right;
-  margin-right: 140px;
+  margin-top: 125px;
 }
 
 h1
@@ -196,17 +235,3 @@ Outfit display:
   height: 10px;
   float: left;
 }
-
-/*.outfit_display
-{
-  display: inline-block;
-}
-*/
-/*.outfit_index
-{
-  padding-top: 30px;
-  padding-bottom: 30px;
-}*/
-/*
-End Outfit Display
-*/

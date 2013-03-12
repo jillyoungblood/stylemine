@@ -10,7 +10,7 @@
             %ul
               - @outfit.errors.full_messages.each do |msg|
                 %li= msg
-        .field
+        .field#outfits_form
           = f.label :name, :autofocus => 'autofocus'
           = f.text_field :name
           %br/
@@ -25,4 +25,4 @@
               = image_tag(piece.image, :size => "100x100", :class => 'select_piece')
               = check_box_tag 'outfit[piece_ids][]', piece.id, piece.in?(@outfit.pieces), :id => nil, :class => 'outfit_checkbox'
         .actions
-          = f.submit :class => 'button radius'
+          = f.submit :class => 'button radius', :id => 'create_outfit_button'
