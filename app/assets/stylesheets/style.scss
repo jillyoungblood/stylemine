@@ -4,6 +4,7 @@
 General
 */
 
+
 .social-buttons
 {
   float: right;
@@ -44,10 +45,13 @@ General
 
 .outfit_index_name
 {
+  color: white;
   border: 1px solid black;
   background-color: black;
   background-size: 20px;
-  color: white;
+  top: 275px;
+  left: 0;
+  width: 40%;
 }
 
 .title
@@ -227,6 +231,8 @@ Outfit display:
   padding-top: 55px;
   padding-bottom: 30px;
   margin-left: 15px;
+  position: relative;
+  width: 100%;
 }
 
 .outfit_name
