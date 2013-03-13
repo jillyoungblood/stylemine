@@ -1,7 +1,7 @@
 $(function(){
 
   $('.outfit_item').click(select_piece);
-  $('#flip').jcoverflip({current: 7});
+  $('.flip').jcoverflip({current: 7});
   // $('.form').blur();
   //$('#next_dropdown').click(show_dropdown);
 
