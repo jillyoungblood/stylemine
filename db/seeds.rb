@@ -77,4 +77,12 @@ p32 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/c
 
 p33 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/s/ps27r522lim_1/.jpg', :item => 'Skirt', :designer => 'Proenza Schouler', :color => 'neon yello', :material => 'calfskin', :fit => 'Hits mid-thigh', :size => '8', :details => 'perforated', :notes => 'Your sister borrowed this!')
 
-u3.pieces << p1 << p2 << p3 << p4 << p5 << p6 << p7 << p8 << p9 << p10 << p11 << p12 << p13 << p14 << p15 << p16 << p17 << p18 << p19 << p20 << p21 << p22 << p23 << p24 << p25 << p26 << p27 << p28 << p29 << p30 << p31 << p32 << p33
+p34 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/e/pepl27p02lbl_1/.jpg', :item => 'Skirt', :designer => 'Peter Pilotto', :color => 'Purple', :material => 'viscous and elastane with lace inset', :fit => 'pencil', :size => '8', :details => 'gathering detail in back', :notes => 'dry clean only')
+
+p35 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/g/pg27p04nfd_1/.jpg', :item => 'Skirt', :designer => 'Prabal Gurung', :color => 'Navy and orange Hawaiian print', :material => 'cotton and spandex', :fit => 'pencil', :size => '8', :details => 'high waist', :notes => 'dry clean only')
+
+p36 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/l/pl27r40blk_1/.jpg', :item => 'Skirt', :designer => '3.1 Phillip Lim', :color => 'Black with floral print', :material => 'silk', :fit => 'mini, not tight', :size => '8', :details => 'pockets!', :notes => 'dry clean only')
+
+p37 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/m/s/msg27p22bw_1/.jpg', :item => 'Skirt', :designer => 'MSGM', :color => 'Black and white stripes', :material => 'silk and cotton', :fit => 'mini, not tight', :size => '8', :details => 'gathered waist', :notes => 'dry clean only')
+
+u3.pieces << p1 << p2 << p3 << p4 << p5 << p6 << p7 << p8 << p9 << p10 << p11 << p12 << p13 << p14 << p15 << p16 << p17 << p18 << p19 << p20 << p21 << p22 << p23 << p24 << p25 << p26 << p27 << p28 << p29 << p30 << p31 << p32 << p33 << p34 << p35 << p36 << p37
