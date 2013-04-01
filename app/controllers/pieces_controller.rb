@@ -4,6 +4,11 @@ class PiecesController < ApplicationController
 
   def index
     @pieces = @auth.pieces.order(:item)
+    @outfit = Outfit.new
+  end
+
+  def browse
+    @pieces = @auth.pieces.order(:item)
   end
 
   # GET /pieces/1
@@ -35,7 +40,7 @@ class PiecesController < ApplicationController
 
   # POST /pieces
   # POST /pieces.json
-  def create
+def create
     @piece = Piece.new(params[:piece])
 
     respond_to do |format|
@@ -53,7 +58,6 @@ class PiecesController < ApplicationController
       end
     end
   end
-
   # PUT /pieces/1
   # PUT /pieces/1.json
   def update
@@ -80,5 +84,10 @@ class PiecesController < ApplicationController
       format.html { redirect_to pieces_url }
       format.json { head :no_content }
     end
+  end
+
+  def filter
+    tag = Tag.find.params[:tag_id]
+    @pieces = tag.pieces
   end
 end

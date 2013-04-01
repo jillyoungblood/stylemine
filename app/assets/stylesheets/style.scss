@@ -4,6 +4,57 @@
 General
 */
 
+#toggle
+{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border: 1px solid blue;
+    position: absolute;
+    margin-left: 225px;
+    margin-top: 100px;
+  }
+
+#dialog
+{
+  height: 150px;
+  width: 350px;
+}
+
+.item
+{
+  width: 175px;
+  height: 250px;
+}
+
+.outfit_test
+{
+  display: inline;
+}
+
+#closet
+{
+  width: 1000px;
+  float: left;
+}
+
+#canvas
+{
+  border: 1px solid black;
+  height: 1000px;
+  width: 500px;
+  margin-left: 25px;
+  margin-right: 25px;
+  float: left;
+}
+
+.outfits_form
+{
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 350px;
+  float: left;
+}
 .container
 {
   overflow: hidden;
@@ -22,20 +73,14 @@ General
   padding: 5px;
 }
 
-#outfits_form
+/*#outfits_form
 {
   width: 1350px;
-}
+}*/
 
 .new_piece_form
 {
   width: 300px;
-}
-
-#create_outfit_button
-{
-  margin-top: 10px;
-  background-color: #2ba6cb;
 }
 
 .outfit_show
@@ -48,10 +93,10 @@ General
   width: 300px;
 }
 
-.button
+/*.button
 {
   background-color: white;
-}
+}*/
 
 .outfit_index_name
 {

@@ -1,28 +1,10 @@
-.row
-  .twelve.columns
-    .outfits_form
-      = form_for(@outfit) do |f|
-        - if @outfit.errors.any?
-          #error_explanation
-            %h2
-              = pluralize(@outfit.errors.count, "error")
-              prohibited this outfit from being saved:
-            %ul
-              - @outfit.errors.full_messages.each do |msg|
-                %li= msg
-        .field#outfits_form
-          = f.label :name, :autofocus => 'autofocus'
-          = f.text_field :name
-          %br/
-          = f.label :occasion
-          = f.text_field :occasion
-          %br/
-          = f.label :notes
-          = f.text_field :notes
-          %br/
-          - Piece.order(:image).each do |piece|
-            .outfit_item
-              = image_tag(piece.image, :size => "100x100", :class => 'select_piece')
-              = check_box_tag 'outfit[piece_ids][]', piece.id, piece.in?(@outfit.pieces), :id => nil, :class => 'outfit_checkbox'
-        .actions
-          = f.submit :class => 'button radius', :id => 'create_outfit_button'
+.outfits_form
+  .field#outfits_form
+    = label_tag :'Outfit Name'
+    = text_field_tag :name
+    %br/
+    = label_tag :Notes
+    = text_field_tag :notes
+    = hidden_field_tag :authenticy_token, form_authenticity_token
+  .actions
+    = button_tag nil, :id => 'button', :class => 'button radius tiny'

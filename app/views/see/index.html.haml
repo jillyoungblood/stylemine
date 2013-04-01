@@ -1,0 +1,6 @@
+.outfit_test
+  #canvas
+  = link_to('Create Outfit', new_see_path, :remote => true, :class => 'button tiny alert')
+  #closet
+    - Piece.order(:image).each do |piece|
+      = image_tag(piece.image, :class => 'item', :'data-id'=>piece.id)
