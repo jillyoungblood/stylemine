@@ -1,0 +1,27 @@
+%script{:src => "http://code.jquery.com/ui/1.10.2/jquery-ui.js"}
+.outfit_test
+  #canvas
+  = render '/outfits/form'
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  %br
+  #closet
+    - Piece.order(:image).each do |piece|
+      = image_tag(piece.image, :class => 'item', :'data-id'=>piece.id)
+
+
+/ .row
+/   .twelve.columns
+/     #your_closet_page_header Your Closet
+/     .container
+/       - Piece.order(:image).each do |piece|
+/         = image_tag(piece.image, :class => 'item')
+/         - piece.tags.each do |tag|
+/           = link_to(tag.name, filter_pieces_path(tag.id), :remote => true, :class => 'button tiny radius secondary')

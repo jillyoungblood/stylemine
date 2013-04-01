@@ -6,14 +6,15 @@ Style::Application.routes.draw do
   resources :pieces
   resources :users
 
+  get '/browse' => 'pieces#browse'
+
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
-  # resources :home
-  # get '/about' => 'home#about'
-  # get '/faq' => 'home#faq'
-  # get '/contact' => 'home#contact'
-  # get '/index' => 'home#index'
-
+  resources :pieces do
+  collection do
+    get 'filter/:tag_id', :action => :filter, :as => :filter
+    end
+  end
 end

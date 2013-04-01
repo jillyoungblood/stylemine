@@ -1,6 +1,6 @@
 .row
 .twelve.columns
-= form_for(@piece) do |f|
+= form_for (@piece) do |f|
   - if @piece.errors.any?
     #error_explanation
       %h2
@@ -37,5 +37,8 @@
     %br/
     = f.label :notes
     = f.text_field :notes
+    %br
+    = f.label :tags
+    = text_field_tag :tags
   .actions
     = f.submit

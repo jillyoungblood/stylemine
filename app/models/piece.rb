@@ -21,4 +21,5 @@ class Piece < ActiveRecord::Base
   attr_accessible :image, :item, :designer, :color, :material, :fit, :size, :details, :notes
   belongs_to :user
   has_and_belongs_to_many :outfits
+  has_and_belongs_to_many :tags
 end

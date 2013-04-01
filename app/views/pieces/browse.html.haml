@@ -1,0 +1,22 @@
+.row
+  .twelve.columns
+    #your_closet_page_header Browse by Item
+    .container
+      %ul.flip.ui-jcoverflip
+        - @pieces.where(:item => 'T-Shirt').each do |piece|
+          %li
+            %a{:href => piece_path(piece)}
+              %img{:src => piece.image}
+              %span.title= piece.item
+      %ul.flip.ui-jcoverflip
+        - @pieces.where(:item => 'Skirt').each do |piece|
+          %li
+            %a{:href => piece_path(piece)}
+              %img{:src => piece.image}
+              %span.title= piece.item
+      %ul.flip.ui-jcoverflip
+        - @pieces.where(:item => 'Shoes').each do |piece|
+          %li
+            %a{:href => piece_path(piece)}
+              %img{:src => piece.image}
+              %span.title= piece.item

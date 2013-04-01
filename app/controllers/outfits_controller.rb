@@ -39,17 +39,7 @@ class OutfitsController < ApplicationController
   # POST /outfits
   # POST /outfits.json
   def create
-    @outfit = Outfit.new(params[:outfit])
-
-    respond_to do |format|
-      if @outfit.save
-        format.html { redirect_to @outfit, notice: 'Outfit was successfully created.' }
-        format.json { render json: @outfit, status: :created, location: @outfit }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @outfit.errors, status: :unprocessable_entity }
-      end
-    end
+    @outfit = Outfit.create(params[:outfit])
   end
 
   # PUT /outfits/1
