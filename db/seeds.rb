@@ -17,7 +17,7 @@ p4 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/ca
 
 p5 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/r/o/ro26p336blk_1/.jpg', :item => 'Leggings', :designer => 'Rick Owens', :color => 'black', :material => 'lambskin', :fit => 'fitted', :size => 'medium', :details => 'striped seams at kneeds', :notes => 'stretchy')
 
-p6 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/g/pg27p05d_1/.jpg', :item => 'T-Shirt', :designer => 'Prabal Gurung', :color => 'white, red, gray floral print', :material => 'polyester', :fit => 'semi-fitted', :size => 'medium', :details => 'short sleeves', :notes => 'semi-sheer')
+p6 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/g/pg27p05d_1/.jpg', :item => 'Top', :designer => 'Prabal Gurung', :color => 'white, red, gray floral print', :material => 'polyester', :fit => 'semi-fitted', :size => 'medium', :details => 'short sleeves', :notes => 'semi-sheer')
 
 p7 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/f/n/fnt27r301ta_1_1/.jpg', :item => 'Jewelry', :designer => 'Fenton', :color => 'turquoise, crystal, sterling', :material => 'crystal and sterling', :fit => 'n/a', :size => '3.5 inch drop', :details => 'n/a', :notes => 'n/a')
 
@@ -27,11 +27,11 @@ p9 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/ca
 
 p10 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/n/f/nf27pladblk_1/.jpg', :item => 'Jacket', :designer => 'Norisol Ferrari', :color => 'black', :material => 'crepe', :fit => 'comfortably fitted', :size => 'medium', :details => 'Sgt. Pepper buttons', :notes => 'dry clean only')
 
-p11 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/l/pl27p145gry_1/.jpg', :item => 'T-Shirt', :designer => '3.1 Phillip Lim', :color => 'heather gray and black', :material => 'cotton and modal', :fit => 'fairly loose', :size => 'medium', :details => 'black lace inset', :notes => 'dry clean only')
+p11 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/p/l/pl27p145gry_1/.jpg', :item => 'Top', :designer => '3.1 Phillip Lim', :color => 'heather gray and black', :material => 'cotton and modal', :fit => 'fairly loose', :size => 'medium', :details => 'black lace inset', :notes => 'dry clean only')
 
-p12 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/h/e/hel27r07ecr_1/.jpg', :item => 'T-Shirt', :designer => 'Hellessy', :color => 'ecru', :material => 'modal and silk', :fit => 'casually loose', :size => 'medium', :details => 'slight roll-up at sleeves', :notes => 'dry clean only')
+p12 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/h/e/hel27r07ecr_1/.jpg', :item => 'Top', :designer => 'Hellessy', :color => 'ecru', :material => 'modal and silk', :fit => 'casually loose', :size => 'medium', :details => 'slight roll-up at sleeves', :notes => 'dry clean only')
 
-p13 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/h/e/hel27r07blk_1/.jpg', :item => 'T-Shirt', :designer => 'Hellessy', :color => 'black', :material => 'modal and silk', :fit => 'casually loose', :size => 'medium', :details => 'slight roll-up at sleeves', :notes => 'dry clean only...has a stain')
+p13 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/h/e/hel27r07blk_1/.jpg', :item => 'Top', :designer => 'Hellessy', :color => 'black', :material => 'modal and silk', :fit => 'casually loose', :size => 'medium', :details => 'slight roll-up at sleeves', :notes => 'dry clean only...has a stain')
 
 p14 = Piece.create(:image => 'http://cdn.kirnazabete.com/media/catalog/product/cache/1/image/5e06319eda06f020e43594a9c230972d/m/s/msg27p14rwb_1/.jpg', :item => 'Skirt', :designer => 'MSGM', :color => 'beige, purple, pink', :material => 'polyester and cotton', :fit => 'comfortable but short', :size => 'medium', :details => 'stripes', :notes => 'dry clean only')
 

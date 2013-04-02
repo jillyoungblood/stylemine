@@ -23,12 +23,6 @@ $ ->
   $( ".item").draggable
     revert: "invalid"
 
-  # $closet.droppable
-  # accept: "#canvas > .item"
-  # activeClass: "custom-state-active"
-  # drop: (event, ui) ->
-  #   recycleImage ui.draggable
-
   $canvas.droppable
     accept: "#closet > .item"
     activeClass: "ui-state-highlight"

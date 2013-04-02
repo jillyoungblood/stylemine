@@ -1,7 +1,12 @@
 %script{:src => "http://code.jquery.com/ui/1.10.2/jquery-ui.js"}
+#canvas
 .outfit_test
-  #canvas
   = render '/outfits/form'
+  %br
+  %br
+  %br
+  %br
+  %br
   %br
   %br
   %br
@@ -14,7 +19,7 @@
   %br
   #closet
     - Piece.order(:image).each do |piece|
-      = image_tag(piece.image, :class => 'item', :'data-id'=>piece.id)
+      = image_tag(piece.image, :class => 'item', :id => 'comments', :'data-id'=>piece.id)
 
 
 / .row

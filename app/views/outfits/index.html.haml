@@ -1,6 +1,9 @@
 .row
   .twelve.columns
     .outfit_display
+      %br
+      %br
+      %br
       - @outfits.each do |outfit|
         #{link_to(outfit.name, outfit, :class => 'outfit_index_name')}
         %br/

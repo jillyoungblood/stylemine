@@ -1,3 +1,6 @@
+%h1.your_closet_header
+  Your Closet
+  %small Drag and drop to create your look.
 .outfits_form
   .field#outfits_form
     = label_tag :'Outfit Name'
@@ -7,4 +10,4 @@
     = text_field_tag :notes
     = hidden_field_tag :authenticy_token, form_authenticity_token
   .actions
-    = button_tag nil, :id => 'button', :class => 'button radius tiny'
+    = button_tag 'Create', :id => 'button', :class => 'button radius tiny'
